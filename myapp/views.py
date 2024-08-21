@@ -6,7 +6,6 @@ from django.conf import settings
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 
-
 # 1. 모델 로드
 model_path = "models-for-facial-expression-recognition-tensorflow2-default-v1/best_simple_model"  # .pb 파일이 있는 디렉토리 경로
 model = tf.saved_model.load(model_path)
@@ -30,7 +29,7 @@ def home(request):
     return render(request, 'home.html')
 
 
-def upload_image(request):
+def upload_and_recognition(request):
     if request.method == 'POST':
         uploaded_file = request.FILES['image']
 
@@ -44,31 +43,8 @@ def upload_image(request):
             for chunk in uploaded_file.chunks():
                 destination.write(chunk)
 
-        # 이미지 경로를 템플릿으로 전달
-        context = {
-            'image_url': settings.MEDIA_URL + uploaded_file.name
-        }
-        return render(request, 'upload.html', context)
-
-    return render(request, 'upload.html')
-
-
-# 4. 업로드 이미지 처리 및 모델 예측
-def recognition(request):
-    if request.method == 'POST':
-        # 업로드된 이미지 파일 경로 가져오기
-        image_url = request.POST.get('image_name')
-
-        # 첫 번째 '/' 기호만 제거하기
-        if image_url.startswith('/'):
-            image_name = image_url[1:]  # '/' 기호를 제거하여 새로운 문자열 생성
-        else:
-            image_name = image_url
-
-        image_path = os.path.join(settings.MEDIA_ROOT, image_name)
-
         # 입력 데이터 준비
-        input_data = preprocess_image(image_path)
+        input_data = preprocess_image(file_path)
         input_tensor = tf.convert_to_tensor(input_data)
 
         # 모델 예측
@@ -81,10 +57,10 @@ def recognition(request):
 
         # 결과를 템플릿으로 전달
         context = {
-            'image_url': settings.MEDIA_URL + image_name,
+            'image_url': settings.MEDIA_URL + uploaded_file.name,
             'predicted_emotion': decoded_label,
         }
-        # return render(request, 'upload.html', context)
-        return HttpResponseRedirect(reverse('upload'))
+
+        return render(request, 'upload.html', context)
 
     return render(request, 'upload.html')

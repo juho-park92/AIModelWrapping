@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ef9fde3-8c8d-4bb1-a5d9-0b167b39ce0a" name="Changes" comment="Django를 활용하여 TEST 서버 띄우기&#10;로컬에 있는 사진 upload 시 저장 및 사진 출력까지 완료">
+    <list default="true" id="2ef9fde3-8c8d-4bb1-a5d9-0b167b39ce0a" name="Changes" comment="사진 출력 후 ai 모델을 이용하여 표정 인식 출력 확인">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myapp/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/templates/upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/views.py" afterDir="false" />
@@ -140,12 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724234917988</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="사진 출력 후 ai 모델을 이용하여 표정 인식 출력 확인">
+      <option name="closed" value="true" />
+      <created>1724248890437</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724248890437</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kaggle 모델 TEST" />
     <MESSAGE value="Django를 활용하여 TEST 서버 띄우기&#10;로컬에 있는 사진 upload 시 저장 및 사진 출력까지 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="Django를 활용하여 TEST 서버 띄우기&#10;로컬에 있는 사진 upload 시 저장 및 사진 출력까지 완료" />
+    <MESSAGE value="사진 출력 후 ai 모델을 이용하여 표정 인식 출력 확인" />
+    <option name="LAST_COMMIT_MESSAGE" value="사진 출력 후 ai 모델을 이용하여 표정 인식 출력 확인" />
   </component>
 </project>
