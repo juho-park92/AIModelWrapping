@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ef9fde3-8c8d-4bb1-a5d9-0b167b39ce0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AIModelTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="2ef9fde3-8c8d-4bb1-a5d9-0b167b39ce0a" name="Changes" comment="Kaggle 모델 TEST">
+      <change afterPath="$PROJECT_DIR$/myapp/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/templates/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,13 +38,45 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Runserver.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "last_opened_file_path": "C:/PythonProject/AIModelTest/manage.py",
+    "settings.editor.selected.configurable": "promo.django"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PythonProject\AIModelTest\AIModelTest" />
+      <recent name="C:\PythonProject\AIModelTest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Runserver">
+    <configuration name="Runserver" type="PythonConfigurationType" factoryName="Python">
+      <module name="AIModelTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.8 (AIModelTest)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AIModelTest" />
       <option name="ENV_FILES" value="" />
@@ -69,6 +99,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.Runserver" />
+      <item itemvalue="Python.main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
@@ -91,6 +125,19 @@
       <option name="presentableId" value="Default" />
       <updated>1724072870328</updated>
     </task>
+    <task id="LOCAL-00001" summary="Kaggle 모델 TEST">
+      <option name="closed" value="true" />
+      <created>1724132674593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724132674593</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Kaggle 모델 TEST" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kaggle 모델 TEST" />
   </component>
 </project>
