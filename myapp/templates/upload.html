@@ -17,6 +17,17 @@
     {% if image_url %}
         <h2>Uploaded Image:</h2>
         <img src="{{ image_url }}" alt="Uploaded Image" style="max-width: 300px; max-height: 300px;">
+
+        <!-- recognition 버튼 추가 -->
+        <form method="post" action="{% url 'recognition' %}">
+            {% csrf_token %}
+            <input type="hidden" name="image_name" value="{{ image_url|slice:'6:' }}">
+            <button type="submit">Recognition</button>
+        </form>
+
+        {% if predicted_emotion %}
+            <h3>Predicted Emotion: {{ predicted_emotion }}</h3>
+        {% endif %}
     {% endif %}
 </body>
 </html>
